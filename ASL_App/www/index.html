@@ -1,48 +1,118 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
+        <meta charset="utf-8">
+        <!-- Can't zoom in -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- App Name -->
         <title>Freedom Center ASL App</title>
+        <!-- To Frameworks 7 CSS -->
+        <link rel="stylesheet" href="css/framework7.ios.min.css">
+        <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+        <!-- Path to your custom app styles-->
+        <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-    <div class="statusbar-overlay"></div>
+        <!-- Status Bar -->
+        <div class="statusbar-overlay"></div>
+        <!-- Panels overlay-->
+        <div class="panel-overlay"></div>
+        <!-- Left panel with reveal effect-->
+        <div class="panel panel-left panel-reveal">
+            <div class="content-block">
+                <p>Left panel content goes here</p>
+            </div>
+        </div>
+        <!-- Right panel with cover effect-->
+        <div class="panel panel-right panel-cover">
+            <div class="content-block">
+                <p>Right panel content goes here</p>
+            </div>
+        </div>
+        <!-- Views-->
+        <div class="views">
+            <!-- Your main view, should have "view-main" class-->
+            <div class="view view-main">
+                <!-- Top Navbar-->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <!-- We have home navbar without left link-->
+                        <div class="center sliding">Freedom Center ASL App</div>
+                        <div class="right">
+                            <!-- Right link contains only icon - additional "icon-only" class-->
+                            <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div class="pages navbar-through toolbar-through">
+                    <!-- Page, data-page contains page name-->
+                    <div class="page" data-page="index">
+                        <!-- To make page scroll-->
+                        <div class="page-content">
+                            <div class="content-block-title">Welcome to the Freedom Center ASL App!</div>
+                                <div class="content-block">
+                                    <div class="content-block-inner">
+                                        <p>This is an app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language.</p>
+                                    </div>
+                                </div>
+                            <div class="content-block-title">Where to start</div>
+                            <div class="list-block">
+                                <ul>
+                                    <!--Page content-->
+                                    <li>
+                                        <a href="exhibits.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Exhibits</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title">About</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="credits.html" class="item-link">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Credits</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!--Page content-->
+
+<!-- Previous code for different sections
         <center><img src="http://www.freedomcenter.org/_img/nurfc_logo_2x.png" width="370" height="170"></center>
         <h1><center>Freedom Center</center></h1>
         <p><center>
-            <a href=exhibits.html>Exhibits</a>
+            <a href="exhibits.html">Exhibits</a>
             <br>
             <a href="about.html">About</a>
             <br>
             <a href="credits.html">Credits</a>
         </center></p>
+-->
+    <!-- To Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- To app js-->
+    <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
 

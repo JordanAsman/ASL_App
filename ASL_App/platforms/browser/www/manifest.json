@@ -1,0 +1,17 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Freedom Center ASL App",
+  "short_name": "Freedom Center ASL App",
+  "version": "io.cordova.hellocordova",
+  "description": "An app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language",
+  "author": "Jordan Asman",
+  "icons": [
+    {
+      "src": "res/freedomCenterIcon.PNG",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "index.html"
+}

@@ -4,12 +4,12 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>HelloCordova</name>
+    <name>Freedom Center ASL App</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        An app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="jordan.asman@gmail.com" href="http://www.freedomcenter.org/">
+        Jordan Asman
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -19,6 +19,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="res/freedomCenterIcon.PNG" />
+    <allow-navigation href="https://*youtube.com/*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

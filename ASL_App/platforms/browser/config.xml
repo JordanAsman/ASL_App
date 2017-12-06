@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Freedom Center ASL App</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        An app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="jordan.asman@gmail.com" href="http://www.freedomcenter.org/">
+        Jordan Asman
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -15,4 +15,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <icon src="res/freedomCenterIcon.PNG" />
+    <allow-navigation href="https://*youtube.com/*" />
 </widget>
