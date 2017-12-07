@@ -19,7 +19,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="res/freedomCenterIcon.PNG" />
+    <icon src="res/icon.png" />
     <allow-navigation href="https://*youtube.com/*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
