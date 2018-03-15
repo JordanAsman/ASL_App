@@ -4,7 +4,7 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <name>Freedom Center ASL App</name>
+    <name>ASL Freedom Center App</name>
     <description>
         An app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language
     </description>

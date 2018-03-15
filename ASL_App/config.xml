@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Freedom Center ASL App</name>
+    <name>ASL Freedom Center App</name>
     <description>
         An app that translates the tours given at the National Underground Railroad Freedom Center into American Sign Language
     </description>
